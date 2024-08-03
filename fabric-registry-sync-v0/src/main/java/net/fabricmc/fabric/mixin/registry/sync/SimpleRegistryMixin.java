@@ -252,6 +252,7 @@ public abstract class SimpleRegistryMixin<T> implements MutableRegistry<T>, Rema
 			remoteIndexedEntries = new Object2IntOpenHashMap<>();
 
 			for (Identifier id : oldRemoteIndexedEntries.keySet()) {
+				System.out.println(id);
 				int v = oldRemoteIndexedEntries.getInt(id);
 				remoteIndexedEntries.put(id, v);
 				if (v > maxValue) maxValue = v;

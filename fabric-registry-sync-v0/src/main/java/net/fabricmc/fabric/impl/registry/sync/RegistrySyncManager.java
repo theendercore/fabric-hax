@@ -365,6 +365,7 @@ public final class RegistrySyncManager {
 			Registry registry = Registries.REGISTRIES.get(registryId);
 
 			if (registry instanceof RemappableRegistry) {
+				System.out.println("\n\n Unmapping : " + registryId + "\n");
 				((RemappableRegistry) registry).unmap(registryId.toString());
 			}
 		}
